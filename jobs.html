@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Endure By Faith" />
+    <meta
+      name="keywords"
+      content="Endure By Faith, veteran, services, united, military, army, navy, air force, marines, coast guard, national guard, reserve, veterans, service members, va benefits, military transition"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/desktop.css" />
+    <link rel="stylesheet" href="css/dark.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <script
+      src="https://kit.fontawesome.com/3cabeecb83.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Endure By Faith | Jobs</title>
+  </head>
+  <body page="jobs">
+    <header>
+      <nav class="mobile mobile-nav">
+        <ul>
+          <li class="logo logo-blue">
+            <a href="index.html">
+              <img src="images/logo-blue.svg" alt="logo" />
+            </a>
+          </li>
+          <li class="logo logo-white">
+            <a href="index.html">
+              <img src="images/logo-white.svg" alt="logo" />
+            </a>
+          </li>
+          <li class="jobs"><a href="jobs.html">JOBS</a></li>
+          <li class="theme" onclick="theme()">
+            <i class="fa-regular fa-circle-half-stroke"></i>
+          </li>
+          <li id="hamburger" class="hamburger" onclick="menuToggle()">
+            <span class="hamburger-line top"></span>
+            <span class="hamburger-line bottom"></span>
+            <span class="hamburger-line middle"></span>
+          </li>
+        </ul>
+      </nav>
+      <nav class="desktop desktop-nav">
+        <ul class="nav-left">
+          <li class="logo logo-color">
+            <a href="index.html">
+              <img src="images/logo.svg" alt="logo" />
+            </a>
+          </li>
+          <li class="logo logo-white">
+            <a href="index.html">
+              <img src="images/logo-white.svg" alt="logo" />
+            </a>
+          </li>
+          <a href="index.html">
+            <li class="logo-text">ENDURE BY FAITH</li>
+          </a>
+        </ul>
+        <ul class="nav-right">
+          <li class="theme" onclick="theme()">
+            <i class="icon-tag fa-regular fa-circle-half-stroke"></i>
+          </li>
+          <li id="desktop-jobs" class="jobs">
+            <a href="jobs.html">JOB BOARD</a>
+          </li>
+          <li id="desktop-hamburger" class="hamburger" onclick="menuToggle()">
+            <span class="hamburger-line top"></span>
+            <span class="hamburger-line bottom"></span>
+            <span class="hamburger-line middle"></span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="hamburger-menu" class="hamburger-menu">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Title -->
+    <h1 class="section-title">Jobs</h1>
+
+    <!-- Search -->
+    <section>
+      <form action="jobs.html" class="form-search">
+        <div class="form-group">
+          <label for="search"></label>
+          <input type="text" name="search" id="search" placeholder="Search" />
+        </div>
+      </form>
+    </section>
+
+    <!-- Listings -->
+    <section class="listings">
+      <p class="listing-info">56 Jobs Available</p>
+      <div class="cards">
+        <div class="card neu-border">
+          <a href="https://www.nasa.gov" target="_blank">
+            <h1 class="card-title">Astronaut</h1>
+            <div class="card-company">NASA</div>
+            <div class="card-location">Mars</div>
+            <strong class="card-salary">$150K/yr - $200K/yr</strong>
+            <div class="desktop card-description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+                officia.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="card neu-border">
+          <h1 class="card-title">Data Analyst</h1>
+          <div class="card-company">Thinking Consulting</div>
+          <div class="card-location">Austin, TX</div>
+          <strong class="card-salary">$98K/yr</strong>
+          <div class="desktop card-description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+              officia.
+            </p>
+          </div>
+        </div>
+        <div class="card neu-border">
+          <h1 class="card-title">Software Developer</h1>
+          <div class="card-company">Umbrella Corp.</div>
+          <div class="card-location">Tokyo, Japan</div>
+          <strong class="card-salary">$86K/yr</strong>
+          <div class="desktop card-description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+              officia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="desktop">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top-left">
+            <div class="logo logo-footer">
+              <img src="images/logo-white.svg" alt="EBF Logo" />
+            </div>
+            <p>ENDURE BY FAITH</p>
+          </div>
+          <div class="footer-top-right">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-middle">
+          <div class="footer-middle-left">
+            <p>Phone: <a href="tel:123-456-7890">(123) 456-7890</a></p>
+            <p>Email: <a href="mailto:info@ebf.org">info@ebf.org</a></p>
+            <p>123 Main Street, Somewhere, Texas 12345</p>
+          </div>
+          <div class="footer-middle-right"></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; Endure By Faith</p></div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

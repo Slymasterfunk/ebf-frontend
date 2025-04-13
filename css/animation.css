@@ -1,0 +1,44 @@
+@keyframes fadeShrink {
+  0% {
+    opacity: 0;
+    letter-spacing: 13px;
+  }
+  50%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    padding-top: 100px;
+  }
+  50%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+  100% {
+    opacity: 0;
+  }
+}

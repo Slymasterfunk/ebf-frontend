@@ -1,0 +1,127 @@
+.dark-mode {
+  background-color: var(--primary-color);
+  color: var(--light-bg);
+}
+
+.dark-mode a {
+  color: var(--light-bg);
+}
+
+.dark-mode .mobile-nav {
+  background: linear-gradient(to top, var(--primary-color), #001253);
+}
+
+.dark-mode .logo-blue,
+.dark-mode .logo-color {
+  display: none;
+}
+
+.dark-mode .logo-white {
+  display: block;
+}
+
+.dark-mode .jobs {
+  background-color: var(--light-bg);
+}
+
+.dark-mode .jobs a {
+  color: var(--primary-color);
+}
+
+.dark-mode .theme i {
+  color: var(--light-bg);
+}
+
+.dark-mode .hamburger span {
+  background-color: var(--light-bg);
+}
+
+.dark-mode .hamburger-menu {
+  background-color: var(--primary-color);
+  border-color: var(--light-bg);
+}
+
+.dark-mode .neu-border {
+  box-shadow: 6px 6px 25px #000000, -6px -6px 25px var(--dark-shadow);
+}
+
+.dark-mode .wrapper {
+  box-shadow: inset 10px 10px 25px #000000,
+    inset -10px -10px 25px var(--dark-shadow);
+}
+
+.dark-mode .icon {
+  box-shadow: 5px 5px 20px #000000, -5px -5px 20px var(--dark-shadow);
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select {
+  color: var(--light-bg);
+  box-shadow: inset 6px 6px 20px #000000, inset -6px -6px 20px #00186f;
+  transition: all 0.5s;
+}
+
+.dark-mode select {
+  color: #666666;
+}
+
+.dark-mode .btn {
+  background-color: #001b7b;
+  box-shadow: 6px 6px 25px #000000, -6px -6px 25px #001a76;
+  transition: all 0.5s;
+}
+
+.dark-mode hr {
+  border-color: var(--light-bg);
+}
+
+.dark-mode .form-control > input:checked + label {
+  color: var(--blue-text);
+}
+
+.dark-mode .form-control_slider {
+  box-shadow: inset 5px 5px 15px #000000, inset -5px -5px 15px #00186f;
+}
+
+.dark-mode .form-control label:hover {
+  color: var(--blue-text);
+}
+
+/* Desktop */
+@media (min-width: 961px) {
+  .dark-mode .desktop-nav {
+    background-color: var(--primary-color);
+  }
+
+  .dark-mode .bg-none {
+    background: none;
+  }
+
+  .dark-mode footer {
+    background: #000518;
+  }
+
+  .dark-mode #hero .arrow span {
+    border-right: 3px solid var(--light-bg);
+    border-bottom: 3px solid var(--light-bg);
+  }
+
+  .dark-mode .wrapper {
+    box-shadow: none;
+  }
+
+  .dark-mode .jobs {
+    background-color: transparent;
+  }
+
+  .dark-mode .jobs a {
+    color: var(--light-bg);
+  }
+
+  .dark-mode .hamburger-menu {
+    border-color: none;
+    box-shadow: 6px 6px 25px #000000, -6px -6px 25px #00186f;
+    transition: all 0.5s;
+  }
+}

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Endure By Faith" />
+    <meta
+      name="keywords"
+      content="Endure By Faith, veteran, services, united, military, army, navy, air force, marines, coast guard, national guard, reserve, veterans, service members, va benefits, military transition"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/desktop.css" />
+    <link rel="stylesheet" href="css/dark.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <script
+      src="https://kit.fontawesome.com/3cabeecb83.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Endure By Faith</title>
+  </head>
+  <body page="home">
+    <div id="loading-page">
+      <div id="loader">
+        <div class="loading-text">
+          <div class="logo loading-logo">
+            <img src="images/logo-white.svg" alt="logo" />
+          </div>
+          <span>ENDURE BY FAITH</span>
+        </div>
+      </div>
+    </div>
+    <header>
+      <nav class="mobile mobile-nav">
+        <ul>
+          <li class="logo logo-blue">
+            <a href="index.html">
+              <img src="images/logo-blue.svg" alt="logo" />
+            </a>
+          </li>
+          <li class="logo logo-white">
+            <a href="index.html">
+              <img src="images/logo-white.svg" alt="logo" />
+            </a>
+          </li>
+          <li class="jobs"><a href="jobs.html">JOBS</a></li>
+          <li class="theme" onclick="theme()">
+            <i class="fa-regular fa-circle-half-stroke"></i>
+          </li>
+          <li id="hamburger" class="hamburger" onclick="menuToggle()">
+            <span class="hamburger-line top"></span>
+            <span class="hamburger-line bottom"></span>
+            <span class="hamburger-line middle"></span>
+          </li>
+        </ul>
+      </nav>
+      <nav class="desktop desktop-nav">
+        <ul class="nav-left">
+          <li class="logo logo-color">
+            <a href="index.html">
+              <img src="images/logo.svg" alt="logo" />
+            </a>
+          </li>
+          <li class="logo logo-white">
+            <a href="index.html">
+              <img src="images/logo-white.svg" alt="logo" />
+            </a>
+          </li>
+          <a href="index.html">
+            <li class="logo-text">ENDURE BY FAITH</li>
+          </a>
+        </ul>
+        <ul class="nav-right">
+          <li class="theme" onclick="theme()">
+            <i class="icon-tag fa-regular fa-circle-half-stroke"></i>
+          </li>
+          <li id="desktop-jobs" class="jobs">
+            <a href="jobs.html">JOB BOARD</a>
+          </li>
+          <li id="desktop-hamburger" class="hamburger" onclick="menuToggle()">
+            <span class="hamburger-line top"></span>
+            <span class="hamburger-line bottom"></span>
+            <span class="hamburger-line middle"></span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="hamburger-menu" class="hamburger-menu">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="logo logo-color">
+        <img src="images/logo.svg" alt="logo" />
+      </div>
+      <div class="logo logo-white">
+        <img src="images/logo-white.svg" alt="logo" />
+      </div>
+
+      <h1 class="title">ENDURE BY FAITH</h1>
+      <div class="counters">
+        <div class="counter neu-border">
+          <div class="counter-title">Partners</div>
+          <div class="counter-number" data-target="56"></div>
+        </div>
+        <div class="counter neu-border">
+          <div class="counter-title">Jobs</div>
+          <div class="counter-number" data-target="84"></div>
+        </div>
+        <div class="counter neu-border">
+          <div class="counter-title">Focused</div>
+          <div id="counter-text" class="counter-text" data-target="U"></div>
+        </div>
+      </div>
+      <div class="message">
+        "Service Members one-stop shop for connecting Active Duty,
+        Transitioning, and Veterans with the resources, guidance, and
+        opportunities they need to thrive."
+      </div>
+      <div class="desktop">
+        <div class="arrow">
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories">
+      <div class="category">
+        <a href="employment.html" class="wrapper">
+          <div class="icon">
+            <i class="icon-tag fa-solid fa-magnifying-glass red-text"></i>
+            <div class="desktop icon-text">Employment Opportunities</div>
+            <div class="desktop icon-description">
+              Programs that connect veterans with job opportunities and
+              employers looking to hire military talent.
+            </div>
+          </div>
+        </a>
+        <div class="mobile category-title">Employment Opportunities</div>
+      </div>
+      <div class="category">
+        <a href="resume.html" class="wrapper">
+          <div class="icon">
+            <i class="icon-tag fa-regular fa-file blue-text"></i>
+            <div class="desktop icon-text">Resume Assistance</div>
+            <div class="desktop icon-description">
+              Professional help in crafting military-to-civilian resumes that
+              highlight transferable skills.
+            </div>
+          </div>
+        </a>
+        <div class="mobile category-title">Resume Assistance</div>
+      </div>
+      <div class="category">
+        <a href="va.html" class="wrapper">
+          <div class="icon">
+            <span class="icon-tag va blue-text">VA</span>
+            <div class="desktop icon-text">VA Assistance</div>
+            <div class="desktop icon-description">
+              Resources to help veterans understand and apply for their VA
+              benefits.
+            </div>
+          </div>
+        </a>
+        <div class="mobile category-title">VA Assistance</div>
+      </div>
+      <div class="category">
+        <a href="branding.html" class="wrapper">
+          <div class="icon">
+            <i class="icon-tag fa-sharp fa-light fa-stars yellow-text"></i>
+            <div class="desktop icon-text">Professional Branding</div>
+            <div class="desktop icon-description">
+              Training on how to leverage LinkedIn for networking and job
+              searching.
+            </div>
+          </div>
+        </a>
+        <div class="mobile category-title">Professional Branding</div>
+      </div>
+      <div class="category">
+        <a href="development.html" class="wrapper">
+          <div class="icon">
+            <i class="icon-tag fa-solid fa-user-plus green-text"></i>
+            <div class="desktop icon-text">Professional Development</div>
+            <div class="desktop icon-description">
+              Programs that focus on personal growth, mindset, and leadership
+              beyond the military.
+            </div>
+          </div>
+        </a>
+        <div class="mobile category-title">Professional Development</div>
+      </div>
+      <div class="category">
+        <div class="wrapper">
+          <div class="icon">
+            <i class="icon-tag fa-regular fa-shield-check blue-text"></i>
+            <div class="desktop icon-text">Career Development</div>
+            <div class="desktop icon-description">
+              Career transition coaching, networking, and job placement support.
+            </div>
+          </div>
+        </div>
+        <div class="mobile category-title">Career Development</div>
+      </div>
+      <div class="category">
+        <div class="wrapper">
+          <div class="icon">
+            <i
+              class="icon-tag fa-regular fa-regular fa-file-certificate yellow-text"
+            ></i>
+            <div class="desktop icon-text">Certification Training</div>
+            <div class="desktop icon-description">
+              Programs that provide technical training, certifications, and
+              career advancement.
+            </div>
+          </div>
+        </div>
+        <div class="mobile category-title">Certification Training</div>
+      </div>
+      <div class="category">
+        <div class="wrapper">
+          <div class="icon">
+            <i class="icon-tag fa-regular fa-house red-text"></i>
+            <div class="desktop icon-text">Real Estate</div>
+            <div class="desktop icon-description">
+              Resources to help veterans buy or refinance homes with VA loan
+              benefits.
+            </div>
+          </div>
+        </div>
+        <div class="mobile category-title">Real Estate</div>
+      </div>
+      <div class="category">
+        <div class="wrapper">
+          <div class="icon">
+            <span class="icon-tag money green-text">$</span>
+            <div class="desktop icon-text">Financial Planning</div>
+            <div class="desktop icon-description">
+              Assistance with retirement planning, investments, and life
+              insurance options for veterans.
+            </div>
+          </div>
+        </div>
+        <div class="mobile category-title">Financial Planning</div>
+      </div>
+      <div class="category">
+        <div class="wrapper">
+          <div class="icon">
+            <i class="icon-tag fa-regular fa-graduation-cap blue-text"></i>
+            <div class="desktop icon-text">Educational Support</div>
+            <div class="desktop icon-description">
+              Programs designed to help veterans transition into higher
+              education or skilled trades.
+            </div>
+          </div>
+        </div>
+        <div class="mobile category-title">Educational Support</div>
+      </div>
+      <div class="category">
+        <div class="wrapper">
+          <div class="icon">
+            <i class="icon-tag fa-regular fa-rocket-launch yellow-text"></i>
+            <div class="desktop icon-text">Internship Programs</div>
+            <div class="desktop icon-description">
+              DoD-approved programs that allow service members to intern with
+              civilian companies before separation.
+            </div>
+          </div>
+        </div>
+        <div class="mobile category-title">Internship Programs</div>
+      </div>
+      <div class="category">
+        <div class="wrapper">
+          <div class="icon">
+            <i class="icon-tag fa-regular fa-route green-text"></i>
+            <div class="desktop icon-text">Mentorship Guidance</div>
+            <div class="desktop icon-description">
+              One-on-one guidance from veteran mentors and career professionals.
+            </div>
+          </div>
+        </div>
+        <div class="mobile category-title">Mentorship & Guidance</div>
+      </div>
+      <div class="category">
+        <div class="wrapper">
+          <div class="icon">
+            <i class="icon-tag fa-regular fa-shop green-text"></i>
+            <div class="desktop icon-text">Business Support</div>
+            <div class="desktop icon-description">
+              Resources for veterans looking to start and grow their own
+              businesses.
+            </div>
+          </div>
+        </div>
+        <div class="mobile category-title">Business Support</div>
+      </div>
+      <div class="category">
+        <div class="wrapper">
+          <div class="icon">
+            <i class="icon-tag fa-regular fa-head-side-medical red-text"></i>
+            <div class="desktop icon-text">Mental Health</div>
+            <div class="desktop icon-description">
+              Support for veterans and families dealing with PTSD, stress, and
+              mental health challenges.
+            </div>
+          </div>
+        </div>
+        <div class="mobile category-title">Mental Health</div>
+      </div>
+      <div class="category">
+        <div class="wrapper">
+          <div class="icon">
+            <i class="icon-tag fa-regular fa-users blue-text"></i>
+            <div class="desktop icon-text">Veteran Network</div>
+            <div class="desktop icon-description">
+              Groups and organizations that foster camaraderie and support among
+              veterans.
+            </div>
+          </div>
+        </div>
+        <div class="mobile category-title">Veteran Network</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="desktop">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top-left">
+            <div class="logo logo-footer">
+              <img src="images/logo-white.svg" alt="EBF Logo" />
+            </div>
+            <p>ENDURE BY FAITH</p>
+          </div>
+          <div class="footer-top-right">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-middle">
+          <div class="footer-middle-left">
+            <p>Phone: <a href="tel:123-456-7890">(123) 456-7890</a></p>
+            <p>Email: <a href="mailto:info@ebf.org">info@ebf.org</a></p>
+            <p>123 Main Street, Somewhere, Texas 12345</p>
+          </div>
+          <div class="footer-middle-right"></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; Endure By Faith</p></div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

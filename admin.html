@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Endure By Faith" />
+    <meta
+      name="keywords"
+      content="Endure By Faith, veteran, services, united, military, army, navy, air force, marines, coast guard, national guard, reserve, veterans, service members, va benefits, military transition"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/desktop.css" />
+    <link rel="stylesheet" href="css/dark.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <script
+      src="https://kit.fontawesome.com/3cabeecb83.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Endure By Faith | Admin</title>
+  </head>
+  <body page="admin">
+    <header>
+      <nav class="mobile mobile-nav">
+        <ul>
+          <li class="logo logo-blue">
+            <a href="index.html">
+              <img src="images/logo-blue.svg" alt="logo" />
+            </a>
+          </li>
+          <li class="logo logo-white">
+            <a href="index.html">
+              <img src="images/logo-white.svg" alt="logo" />
+            </a>
+          </li>
+          <li class="jobs"><a href="jobs.html">JOBS</a></li>
+          <li class="theme" onclick="theme()">
+            <i class="fa-regular fa-circle-half-stroke"></i>
+          </li>
+          <li id="hamburger" class="hamburger" onclick="menuToggle()">
+            <span class="hamburger-line top"></span>
+            <span class="hamburger-line bottom"></span>
+            <span class="hamburger-line middle"></span>
+          </li>
+        </ul>
+      </nav>
+      <nav class="desktop desktop-nav">
+        <ul class="nav-left">
+          <li class="logo logo-color">
+            <a href="index.html">
+              <img src="images/logo.svg" alt="logo" />
+            </a>
+          </li>
+          <li class="logo logo-white">
+            <a href="index.html">
+              <img src="images/logo-white.svg" alt="logo" />
+            </a>
+          </li>
+          <a href="index.html">
+            <li class="logo-text">ENDURE BY FAITH</li>
+          </a>
+        </ul>
+        <ul class="nav-right">
+          <li class="theme" onclick="theme()">
+            <i class="icon-tag fa-regular fa-circle-half-stroke"></i>
+          </li>
+          <li id="desktop-jobs" class="jobs">
+            <a href="jobs.html">JOB BOARD</a>
+          </li>
+          <li id="desktop-hamburger" class="hamburger" onclick="menuToggle()">
+            <span class="hamburger-line top"></span>
+            <span class="hamburger-line bottom"></span>
+            <span class="hamburger-line middle"></span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="hamburger-menu" class="hamburger-menu">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="admin-hero">
+      <h1 class="section-title">DASHBOARD</h1>
+      <div class="counters">
+        <div class="counter neu-border">
+          <div class="counter-title">Partners</div>
+          <div class="counter-number" data-target="56"></div>
+        </div>
+        <div class="counter neu-border">
+          <div class="counter-title">Jobs</div>
+          <div class="counter-number" data-target="84"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industry Chart -->
+    <section id="industry-chart">
+      <h2>Industry</h2>
+      <div class="mobile mobile-chart-container neu-border">
+        <canvas id="mobileIndustryChart"></canvas>
+      </div>
+      <div class="desktop desktop-chart-container neu-border">
+        <canvas id="desktopIndustryChart"></canvas>
+      </div>
+    </section>
+
+    <!-- Forms -->
+    <section id="job">
+      <h2>Create Entry</h2>
+      <div class="form-control neu-border">
+        <input
+          type="radio"
+          name="admin-forms"
+          id="tab-job"
+          class="tab-item"
+          checked
+        />
+        <label for="tab-job" class="form-control_job"><p>Job</p></label>
+        <input
+          type="radio"
+          name="admin-forms"
+          id="tab-organization"
+          class="tab-item"
+        />
+        <label for="tab-organization" class="form-control_organization"
+          ><p>Organization</p></label
+        >
+        <span class="form-control_slider"></span>
+      </div>
+      <!-- Job Form -->
+      <form action="admin.html" id="tab-job-form" class="tab-form-item active">
+        <div class="form-group">
+          <select name="industry" id="industry-input" required>
+            <option value="">Select Industry</option>
+            <option value="technology">IT</option>
+            <option value="retail">Retail</option>
+            <option value="auto">Auto</option>
+            <option value="security">Security</option>
+            <option value="finance">Finance</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="position"></label>
+          <input
+            type="text"
+            name="position"
+            id="position"
+            placeholder="Position"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="company"></label>
+          <input
+            type="text"
+            name="company"
+            id="company"
+            placeholder="Company"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="location"></label>
+          <input
+            type="text"
+            name="location"
+            id="location"
+            placeholder="Location"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="salary"></label>
+          <input
+            type="number"
+            name="salary"
+            id="salary"
+            placeholder="Salary"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="website"></label>
+          <input
+            type="url"
+            name="website"
+            id="website"
+            placeholder="Website"
+            required
+          />
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn-submit">SUBMIT</button>
+        </div>
+      </form>
+      <form
+        action="/admin.html"
+        id="tab-organization-form"
+        class="tab-form-item"
+      >
+        <div class="form-group">
+          <select id="category-input" name="category" required>
+            <option value="">Select Category</option>
+            <option value="employment">Employment Opportunities</option>
+            <option value="resume">Resume Assistance</option>
+            <option value="va">VA Assistance</option>
+            <option value="branding">Professional Branding</option>
+            <option value="development">Professional Development</option>
+            <option value="career">Career Development</option>
+            <option value="certification">Certification Training</option>
+            <option value="estate">Real Estate</option>
+            <option value="financial">Financial Planning</option>
+            <option value="educational">Educational Support</option>
+            <option value="internship">Internship Programs</option>
+            <option value="mentorship">Mentorship & Guidance</option>
+            <option value="business">Business Support</option>
+            <option value="mental">Mental Health</option>
+            <option value="veteran">Veteran Network</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="organization-name"></label>
+          <input
+            type="text"
+            name="organization-name"
+            id="organization-name"
+            placeholder="Organization Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="website"></label>
+          <input
+            type="url"
+            name="website"
+            id="website"
+            placeholder="Website"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="description"></label>
+          <textarea
+            rows="5"
+            name="description"
+            id="description"
+            placeholder="Description of organization"
+            required
+          ></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn-submit">SUBMIT</button>
+        </div>
+      </form>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/charts.js"></script>
+  </body>
+</html>
